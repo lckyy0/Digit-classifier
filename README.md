@@ -143,8 +143,6 @@ The final configuration (256 neurons, 2000 iterations) was chosen to give the mo
 
 ## Results
 
-Fill these in after running the notebook.
-
 | Metric | Value |
 |---|---|
 | Final train accuracy | 0.99978125 |
