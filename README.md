@@ -1,4 +1,4 @@
-# MNIST Digit Classifier from Scratch
+# Digit Classifier from Scratch
 
 A handwritten digit classifier built with only NumPy, pandas and matplotlib. No TensorFlow, PyTorch or scikit-learn is used for the model. Forward propagation, backpropagation and gradient descent are all written by hand, following my own derivation notes.
 
@@ -30,9 +30,6 @@ The CSV is not included in this repository. Download it from Kaggle and place it
 .
 ├── data/
 │   └── train.csv        (download from Kaggle, not committed)
-├── images/
-│   ├── notes_forward_backward.png
-│   └── notes_update_rule.png
 ├── mnist.ipynb
 ├── requirements.txt
 └── README.md
@@ -50,7 +47,7 @@ pip install -r requirements.txt
 
 Put `train.csv` in the `data/` folder, open `mnist.ipynb` in VS Code or Jupyter, and run all cells from top to bottom.
 
-Training on a CPU-only laptop takes roughly 9 minutes for 2000 iterations with 256 hidden neurons.
+Training on my CPU-only laptop took roughly 9 minutes for 2000 iterations with 256 hidden neurons.
 
 ## Notebook walkthrough
 
@@ -69,13 +66,6 @@ Training on a CPU-only laptop takes roughly 9 minutes for 2000 iterations with 2
 | 11 | Test set evaluation, confusion matrix, misclassified digits |
 | 12 | Saving and loading weights with `np.savez` / `np.load`, and predicting a single image |
 
-## The math
-
-Notation follows my handwritten notes in `images/`. Here `m` is the number of images and `n_h` is `hidden_size`.
-
-![Forward and backward propagation notes](images/notes_forward_backward.png)
-
-![Update rule notes](images/notes_update_rule.png)
 
 ### Forward propagation
 
@@ -157,10 +147,10 @@ Fill these in after running the notebook.
 
 | Metric | Value |
 |---|---|
-| Final train accuracy | |
-| Final validation accuracy | |
-| Test accuracy (5,000 images) | |
-| Test loss | |
+| Final train accuracy | 0.99978125 |
+| Final validation accuracy | 0.9764 |
+| Test accuracy (5,000 images) | 0.972 |
+| Test loss | 0.09657827 |
 
 The test set is used once, after all settings are fixed.
 
