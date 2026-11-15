@@ -1,0 +1,13 @@
+{
+  "hidden_size": 256,
+  "alpha": 1.0,
+  "iterations": 2000,
+  "best_iteration": 1850,
+  "train_accuracy": 0.9998125,
+  "val_accuracy": 0.9768,
+  "test_accuracy": 0.9726,
+  "test_loss": 0.09045612066984177,
+  "train_seconds": 522.8,
+  "cpu_count": 4,
+  "numpy_version": "2.1.3"
+}
